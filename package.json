@@ -1,0 +1,69 @@
+{
+  "name": "yt",
+  "displayName": "youtube-player",
+  "description": "Watch YouTube videos directly in VS Code",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/vs-code-youtube-extension"
+  },
+  "keywords": [
+    "youtube",
+    "video",
+    "player",
+    "productivity"
+  ],
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "yt.openVideoPlayer",
+        "title": "YouTube: Open Video Player"
+      },
+      {
+        "command": "yt.createFloatingPlayer",
+        "title": "YouTube: Create Floating Player"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "youtube-sidebar",
+          "title": "YouTube",
+          "icon": "$(play-circle)"
+        }
+      ]
+    },
+    "views": {
+      "youtube-sidebar": [
+        {
+          "type": "webview",
+          "id": "youtube-player",
+          "name": "YouTube Player"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.54.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.21.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
