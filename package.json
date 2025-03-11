@@ -3,7 +3,7 @@
   "displayName": "youtube-player",
   "description": "Watch YouTube videos directly in VS Code",
   "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "publisher": "Kartik gangil",
   "icon": "icon.png",
   "repository": {
     "type": "git",
