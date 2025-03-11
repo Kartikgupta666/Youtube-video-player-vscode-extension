@@ -340,7 +340,7 @@ class YouTubeViewProvider {
         this.state = state;
     }
 
-    resolveWebviewView(webviewView, context, token) {
+    resolveWebviewView(webviewView) {
         this.webviewView = webviewView;
 
         // Set webview options

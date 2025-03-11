@@ -1,9 +1,9 @@
 {
-  "name": "yt",
+  "name": "youtube-player",
   "displayName": "youtube-player",
   "description": "Watch YouTube videos directly in VS Code",
   "version": "0.0.1",
-  "publisher": "Kartik gangil",
+  "publisher": "kartikgangil",
   "icon": "icon.png",
   "repository": {
     "type": "git",
@@ -46,6 +46,7 @@
     "views": {
       "youtube-sidebar": [
         {
+          "icon": "icon.png",
           "type": "webview",
           "id": "youtube-player",
           "name": "YouTube Player"
