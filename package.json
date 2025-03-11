@@ -7,7 +7,7 @@
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/vs-code-youtube-extension"
+    "url": "https://github.com/Kartikgupta666/Youtube-video-player-vscode-extension.git"
   },
   "keywords": [
     "youtube",
